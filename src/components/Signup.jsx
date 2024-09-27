@@ -12,7 +12,7 @@ function Signup() {
     const navigate = useNavigate();
     const [error, setError] = useState("")
     const dispatch = useDispatch()
-    const [registe, handleSubmit] = useForm()
+    const [register, handleSubmit] = useForm()
 
     const create = async (data) => {
         setError("")
@@ -73,7 +73,7 @@ function Signup() {
                         label = "Password"
                         type = "password"
                         placeholder = "Password"
-                        {...register("password" {
+                        {...register("password", {
                             required: true,
                         })}
                         />
